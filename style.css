@@ -6,6 +6,18 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 div div {
     border: 5px solid steelblue;
@@ -14,7 +26,7 @@ div div {
     display: inline-block;
 }
 
-div div div{
+div div div {
     border: 1px solid black;
     font: 90px arial;
     color: lightslategrey;
@@ -33,13 +45,19 @@ div div div{
 
 .button {
     border: 1px solid black;
-    background-color:lightcoral;
+    background-color: lightcoral;
     color: red;
     border-radius: 4px;
     font: 20px arial;
-    margin-top:5px;
+    margin-top: 5px;
     padding-top: 5px;
-    display:block;
+    display: block;
     height: 30px;
     width: 120px;
+    align-self: center;
+}
+
+.button:hover {
+    background-color: darkred;
+    color: white;
 }
