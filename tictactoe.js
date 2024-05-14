@@ -112,7 +112,6 @@ GameBoard.prototype.playGame = function (pOne, pTwo, cb) {
 };
 
 window.onload = function () {
-
     var newGame = document.getElementById("New Game");
 
     var gb = new GameBoard();
@@ -189,7 +188,6 @@ window.onload = function () {
     games.push([7, 5, 9, 4, 2]);
     games.push([7, 5, 9, 2, 6]);
 
-
     var indexer = 0;
     var score = 0;
 
@@ -207,11 +205,10 @@ window.onload = function () {
                 gb.move(list[i]);
             }
             gb.playGame(playerOne, playerTwo, testGame);
-        }
-        else {
+        } else {
             console.log(score + " tests passed.");
         }
-    };
+    }
 
     console.log(states.length);
     window.setTimeout(testGame, 1, gb);
